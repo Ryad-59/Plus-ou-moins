@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plus ou Moins</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="game-container">
+    
+    <h1 class="game-title">🎯 Plus ou Moins</h1>
+    <p class="game-description">Devine le nombre secret entre 0 et 100 !</p>
+
+    <!-- Zone de message -->
+    <div class="message-box" id="message">Fais ta première proposition !</div>
+    
+    
+    <!-- Zone de saisie -->
+    <div class="input-group">
+      <input type="number" id="guessInput" class="guess-input" min="0" max="100" placeholder="0 - 100">
+      
+      
+      <button id="guessBtn" class="btn btn-primary">Deviner</button>
+      
+    </div>
+
+    <!-- Compteur de tentatives -->
+    <p class="attempts">Tentatives : <span id="attemptCount">0</span></p>
+    
+
+    <!-- Bouton rejouer (caché par défaut) -->
+    <button id="restartBtn" class="btn btn-success btn-restart">🔄 Rejouer</button>
+    
+
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
